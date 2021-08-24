@@ -1,31 +1,28 @@
-.skeletonize,
-.skeletonize * {
+.mid,
+.light,
+.dark {
   color: transparent !important;
   user-select: none;
-}
-.skeletonize .mid,
-.skeletonize .light,
-.skeletonize .dark {
   animation-name: loading;
   animation-duration: 3s;
   animation-iteration-count: infinite;
 }
-.skeletonize .mid {
+.mid {
   background-color: hsl(0, 0%, 85%) !important;
 }
-.skeletonize li.li-mid::marker {
+li.li-mid::marker {
   color: hsl(0, 0%, 85%) !important;
 }
-.skeletonize .light {
+.light {
   background-color: hsl(0, 0%, 90%) !important;
 }
-.skeletonize li.li-light::marker {
+li.li-light::marker {
   color: hsl(0, 0%, 90%) !important;
 }
-.skeletonize .dark {
+.dark {
   background-color: hsl(0, 0%, 75%) !important;
 }
-.skeletonize li.li-dark::marker {
+li.li-dark::marker {
   color: hsl(0, 0%, 75%) !important;
 }
 
