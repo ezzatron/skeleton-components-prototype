@@ -1,20 +1,19 @@
 import React from 'react'
 
-import skeleton from '../skeleton.module.css'
 import CardList from './CardList.jsx'
 import SkeletonCard from './SkeletonCard.jsx'
 
 export default function SkeletonCardList () {
-  return <CardList skeleton>
+  return <CardList>
+    <SkeletonCard skeleton />
     <SkeletonCard />
+    <SkeletonCard skeleton />
     <SkeletonCard />
+    <SkeletonCard skeleton />
     <SkeletonCard />
+    <SkeletonCard skeleton />
     <SkeletonCard />
-    <SkeletonCard />
-    <SkeletonCard />
-    <SkeletonCard />
-    <SkeletonCard />
-    <SkeletonCard />
+    <SkeletonCard skeleton />
     <SkeletonCard />
   </CardList>
 }
