@@ -10,8 +10,20 @@ export function Skeleton ({children}) {
   </Context.Provider>
 }
 
-export function useSkeleton (variant) {
+export function useDarkSkeleton () {
   const isSkeleton = useContext(Context)
 
-  return isSkeleton ? styles[variant] : ''
+  return isSkeleton ? styles.dark : ''
+}
+
+export function useLightSkeleton () {
+  const isSkeleton = useContext(Context)
+
+  return isSkeleton ? styles.light : ''
+}
+
+export function useSkeleton () {
+  const isSkeleton = useContext(Context)
+
+  return isSkeleton ? styles.mid : ''
 }

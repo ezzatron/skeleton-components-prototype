@@ -1,16 +1,16 @@
 import React from 'react'
 
-import {useSkeleton} from '../skeleton-context.jsx'
+import {useLightSkeleton} from '../skeleton-context.jsx'
 import Card from './Card.jsx'
 
 export default function SkeletonCard () {
   return <Card title='Example card' actions={['One', 'Two', 'Loooooooooong']}>
-    <p className={useSkeleton('light')}>
+    <p className={useLightSkeleton()}>
       Cupidatat ad est non qui cupidatat velit ut elit officia elit veniam
       duis exercitation in.
     </p>
 
-    <p className={useSkeleton('light')}>
+    <p className={useLightSkeleton()}>
       Lorem ipsum quis ex nulla elit reprehenderit consequat irure laborum ut
       dolor voluptate irure velit ex qui irure dolor nulla eu dolore ullamco
       amet in excepteur ex dolore laborum elit enim dolore magna culpa ullamco
