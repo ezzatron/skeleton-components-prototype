@@ -1,0 +1,9 @@
+.card {
+  background-color: white;
+  padding: 1em;
+  width: 100px;
+}
+
+.title {
+  height: 30px;
+}
